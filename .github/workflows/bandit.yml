@@ -11,5 +11,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-# 1. Checkout the code using actions/checkout
-# 2. Run bandit using tj-actions bandit
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run bandit
+        uses: tj-actions/bandit@v10
+        with:
+          # Optional: specify targets, e.g., 'app' or '.'
+          targets: "."
+          # Optional: specify severity level, e.g., 'LOW', 'MEDIUM', 'HIGH'
+          # level: MEDIUM
+          # Optional: specify confidence level, e.g., 'LOW', 'MEDIUM', 'HIGH'
+          # confidence: MEDIUM
+          # Optional: specify output format, e.g., 'json', 'csv', 'xml', 'html'
+          # format: json
+          # Optional: specify output file path
+          # output_file: bandit-report.json
