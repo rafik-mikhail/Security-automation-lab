@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 HTML_HOME = '''
-<h1>Welcome to Demo App</h1>
+<h1>Welcome to Demo App!</h1>
 <p><a href="/login">Login</a> | <a href="/form">Form</a></p> | <a href="/redirect?next=https://www.google.com">google.com</a>
 '''
 
