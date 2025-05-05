@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run bandit
-        uses: tj-actions/bandit@v10
+        uses: tj-actions/bandit
         with:
           # Optional: specify targets, e.g., 'app' or '.'
           targets: "."
